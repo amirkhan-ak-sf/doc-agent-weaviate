@@ -40,15 +40,15 @@ async function sendMessage() {
   // Add the loading message and assign the returned message element to the loadingMessageElement variable
   loadingMessageElement = addMessage('bot', loadingMessages[currentMessageIndex]);
 
-  // Start the loading message rotation
+  // Start the loading message rotation weaviate-00
   loadingMessageInterval = setInterval(() => {
     currentMessageIndex = (currentMessageIndex + 1) % loadingMessages.length;
     loadingMessageElement.textContent = loadingMessages[currentMessageIndex];
-  }, 5000);
+  }, 2000);
 
 
   try {
-    const response = await fetch('https://knowledgestore-n1pz6c.5sc6y6-2.usa-e2.cloudhub.io/prompt', {
+    const response = await fetch('https://knowledge-mulechain-ai-xnz8ue.5sc6y6-3.usa-e2.cloudhub.io/prompt', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
