@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuleChain Einstein AI Agent</title>
+    <!-- Material Icons -->
+    <link rel="icon" href="assets/logo_1.png" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <div class="card">
+        <!-- Header Section -->
+        <div class="header">
+          <img
+            src="assets/logo.png"
+            alt="MuleChain AI Agent Logo"
+            class="logo"
+          />
+          <div class="header-text">
+            <h1>MuleChain Doc Agent based on <b>Weaviate</b></h1>
+            <h2>I know everything from docs.mulesoft.com</h2>
+          </div>
+        </div>
+
+        <!-- Modify the chat window and input container to be on the right side -->
+        <div class="right-container">
+          <!-- Chat Window -->
+          <div class="card-content">
+            <div id="chat-window" class="chat-window">
+              <div id="output" class="output"></div>
+            </div>
+          </div>
+        <!-- Input Section -->
+        <div class="input-container">
+          <input
+            id="user-input"
+            type="text"
+            placeholder="Enter your questions..."
+          />
+          <!--<select id="language-select" class="browser-default">
+            <option value="en" selected>English</option>
+            <option value="de">German</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="pt">Portuguese</option>
+          </select>-->
+          <button
+            id="send-btn"
+            class="btn waves-effect waves-light"
+            label="true"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.59 5.58L20 12l-8-8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Theme Toggle Switch -->
+    <div class="switch-container">
+      <div class="switch">
+        <label>
+          Light
+          <input type="checkbox" id="theme-toggle" />
+          <span class="lever"></span>
+          Dark
+        </label>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
