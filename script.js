@@ -44,7 +44,7 @@ async function sendMessage() {
   loadingMessageInterval = setInterval(() => {
     currentMessageIndex = (currentMessageIndex + 1) % loadingMessages.length;
     loadingMessageElement.textContent = loadingMessages[currentMessageIndex];
-  }, 2000);
+  }, 5000);
 
 
   try {
