@@ -61,7 +61,10 @@ async function sendMessage() {
     }
 
     //const data = await response.json();
-    const generatedText = await response.text();
+
+    const data = await response.json();
+    const generatedText = data.response;
+    //const generatedText = await response.json();
     const parts = generatedText.split('`');
 
     const pElement = document.createElement('p');
